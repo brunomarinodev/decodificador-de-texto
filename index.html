@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <img class="logo-alura" src="/imagem/logo-alura.png" alt="Logo da alura">
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            
+            <div class="informacao">
+                <h6 class="exclamacao">!</h6>
+                <h6>Apenas letras minúsculas e sem acento</h6>
+            </div>
+            <div class="botoes">
+                <button id="botaoEncriptar" class="botao-encriptar" onclick="botaoEncriptar()">Criptografar</button>
+                <button id="botaoDesencriptar" class="botao-desencriptar" onclick="botaoDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+    
+        <section>
+            <textarea class="mensagem" cols="20" rows="10"></textarea>
+            <button class="botao-copiar" onclick="copiarTexto()">copiar</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>&copy; Desenvolvido por Bruno</p>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
